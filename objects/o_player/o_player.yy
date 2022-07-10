@@ -1,19 +1,18 @@
 {
-  "name": "o_player",
   "spriteId": {
     "name": "s_player_idle",
     "path": "sprites/s_player_idle/s_player_idle.yy",
   },
+  "solid": false,
+  "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "s_player_mask",
     "path": "sprites/s_player_mask/s_player_mask.yy",
   },
-  "visible": true,
-  "solid": false,
   "persistent": false,
-  "physicsObject": false,
-  "managed": true,
   "parentObjectId": null,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -36,6 +35,7 @@
     "path": "folders/Objects/Player.yy",
   },
   "resourceVersion": "1.0",
+  "name": "o_player",
   "tags": [],
   "resourceType": "GMObject",
 }

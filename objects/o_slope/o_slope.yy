@@ -1,19 +1,18 @@
 {
-  "name": "o_slope",
   "spriteId": {
     "name": "s_slope1",
     "path": "sprites/s_slope1/s_slope1.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "o_parent_col",
     "path": "objects/o_parent_col/o_parent_col.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -33,6 +32,7 @@
     "path": "folders/Objects/Misc.yy",
   },
   "resourceVersion": "1.0",
+  "name": "o_slope",
   "tags": [],
   "resourceType": "GMObject",
 }
