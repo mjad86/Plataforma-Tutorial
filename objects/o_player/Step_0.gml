@@ -8,4 +8,6 @@ keyRoll = keyboard_check_pressed(vk_control);
 movement = (keyRight - keyLeft);
 
 //execute state machine
-script_execute(state);
+if(!global.gamePaused) {
+	script_execute(state);
+}//end if

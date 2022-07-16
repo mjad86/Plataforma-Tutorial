@@ -1,5 +1,4 @@
 {
-  "name": "TileSet1",
   "spriteId": {
     "name": "s_tileset_01",
     "path": "sprites/s_tileset_01/s_tileset_01.yy",
@@ -10,13 +9,13 @@
   "tileyoff": 2,
   "tilehsep": 2,
   "tilevsep": 2,
-  "out_tilehborder": 0,
-  "out_tilevborder": 0,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
+  "out_tilehborder": 0,
+  "out_tilevborder": 0,
   "out_columns": 17,
   "tile_count": 289,
   "autoTileSets": [],
@@ -326,6 +325,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "t_castle_interior",
   "tags": [],
   "resourceType": "GMTileSet",
 }
