@@ -8,5 +8,4 @@ function macros_and_enums(){
 	#macro RESOLUTION_W 640
 	#macro RESOLUTION_H 320
 
-
 }//end script

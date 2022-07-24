@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Physics",
+    "path": "folders/Scripts/Physics.yy",
   },
   "resourceVersion": "1.0",
   "name": "player_collision",
