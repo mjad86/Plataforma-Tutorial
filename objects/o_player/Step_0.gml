@@ -12,3 +12,5 @@ movement = (keyRight - keyLeft);
 if(!global.gamePaused) {
 	script_execute(state);
 }//end if
+
+depth = -bbox_bottom;
