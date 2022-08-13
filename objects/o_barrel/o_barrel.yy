@@ -27,7 +27,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"entityActivateScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"instance_destroy","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entityActivateScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"-1","resourceVersion":"1.0","name":"","resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Overworld",
@@ -35,6 +35,5 @@
   },
   "resourceVersion": "1.0",
   "name": "o_barrel",
-  "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(vk_escape)) {
+if(global.keyPause) {
 	global.gamePaused = !global.gamePaused;
 	
 	if(global.gamePaused) {

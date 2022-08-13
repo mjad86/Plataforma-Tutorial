@@ -1,0 +1,35 @@
+lerpProgress += (1 - lerpProgress) / 50;
+
+if(x1 < TILE_SIZE) {
+	textProgress += global.textSpd; //starts writting after textbox is displayed
+}//end if
+
+x1 = lerp(x1, x1Target + (TILE_SIZE * 0.5), lerpProgress);
+x2 = lerp(x2, x2Target, lerpProgress);
+
+textboxWidth = lerp(textboxWidth, x2Target - TILE_SIZE, lerpProgress);
+
+if(keyboard_check_pressed(ord("T"))) {
+	var _msgLen = string_length(msg);
+	if(textProgress >= _msgLen) {
+		instance_destroy(); //destroy the textbox
+		if(instance_exists(o_text_queue)) {
+			with(o_text_queue) {
+				ticket--;//reduce the queue line of textboxes by 1;
+			}//end with
+		}//end if
+		else {
+			if(instance_exists(o_player)) {
+				with(o_player) {
+					state = lastState; //free player again
+				}//end with
+			}//end if
+		}//end else
+	}//end if
+	else {
+		if(textProgress > 2) {
+			textProgress = _msgLen;
+			typist.in(textProgress, 0);
+		}//end if
+	}//end else
+}//end if

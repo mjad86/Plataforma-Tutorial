@@ -4,7 +4,7 @@ function attack_slash_02() {
 	set_sprite(spriteAttack02, 0, 1);//set sprite
 	
 	//trigger combo
-	if(is_grounded()) && (keyActtack) && (image_index > 3) {
+	if(is_grounded()) && (global.keyAttack) && (image_index > 3) {
 		state = player_state_attack;
 		stateAttack = attack_slash_03;
 	}//end if

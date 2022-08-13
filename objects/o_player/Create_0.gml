@@ -1,6 +1,7 @@
 //set state
 state = player_state_free;
 stateAttack = attack_slash_01;
+lastState = state;
 
 hSpd = 0;
 vSpd = 0;

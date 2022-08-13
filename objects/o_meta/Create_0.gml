@@ -1,6 +1,7 @@
 randomize();
 
 global.gamePaused = false;
+global.textSpd = 0.75;
 
 //creation of the camera
 global.iCamera = instance_create_layer(0, 0, layer, o_camera);

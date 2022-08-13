@@ -1,0 +1,1 @@
+ticket = instance_number(o_text_queue)

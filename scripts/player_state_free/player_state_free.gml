@@ -8,7 +8,7 @@ function player_state_free() {
 		vSpd = vSpd + grv;
 	}//end script
 
-	if(is_grounded()) && (keyJump) {
+	if(is_grounded()) && (global.keyJump) {
 		//apply jump height
 		vSpd = jumpHeight;
 	}//end if
@@ -25,7 +25,8 @@ function player_state_free() {
 	
 	//Change State triggers
 	if(is_grounded()) {
-		if(keyRoll) {
+
+		if(global.keyRoll) {
 			//Logic for activating entities
 			//1. Check first if any entity exists within range of activation
 			//2. if theres nothing in range or ahs no script to activate - we roll
@@ -55,7 +56,7 @@ function player_state_free() {
 			}//end else
 		}//end if
 	
-		if(keyActtack) {
+		if(global.keyAttack) {
 			//attack key logic
 			state = player_state_attack;
 			stateAttack = attack_slash_01;
