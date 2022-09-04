@@ -9,7 +9,18 @@ x2 = lerp(x2, x2Target, lerpProgress);
 
 textboxWidth = lerp(textboxWidth, x2Target - TILE_SIZE, lerpProgress);
 
-if(keyboard_check_pressed(ord("T"))) {
+//cycle between responses
+	responseSelected += (global.keyDown - global.keyUp);
+	var _max = array_length(responses) - 1;
+	var _min = 0;
+	if(responseSelected > _max) {
+		responseSelected = _min;
+	}//end if
+	if(responseSelected < _min) {
+		responseSelected = _max;
+	}//end if
+
+if(global.keyRoll) {
 	var _msgLen = string_length(msg);
 	if(textProgress >= _msgLen) {
 		instance_destroy(); //destroy the textbox

@@ -18,6 +18,18 @@ if(x1 < TILE_SIZE) {
 	//draw_set_color(c_white);
 	//draw_text((x1 + x2) * 0.5, y1 + 7, _print);//text
 	var _scribbleObj = scribble(msg);
+	
+	if(responses[0] != -1) && (textProgress >=  string_length(msg)) {
+		for(var _i = 0; _i < array_length(responses); _i++) {
+			msg += "\n";
+			if(_i == responseSelected) {
+				msg += "> ";
+			}//end if
+			msg += responses[_i];
+		}//end for
+	}//end if
+	
+	
 	_scribbleObj.wrap(textWrapWidth, textboxHeight);
 	_scribbleObj.align(fa_center, fa_top);
 	_scribbleObj.starting_format("f_text", c_black);

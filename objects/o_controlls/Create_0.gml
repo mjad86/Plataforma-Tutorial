@@ -3,6 +3,8 @@
 //Controls
 global.keyLeft = false;
 global.keyRight = false;
+global.keyUp = false;
+global.keyDown = false;
 global.keyPause = false;
 global.keyJump = false;
 global.keyRoll = false;
