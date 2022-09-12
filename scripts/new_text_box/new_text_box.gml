@@ -12,6 +12,7 @@ function new_text_box(){
 	
 	with(instance_create_layer(0,0, "player", _obj)) {
 		msg = argument[0];
+
 		if(instance_exists(other)) {
 			originInstance = other.id;
 		}//end if
