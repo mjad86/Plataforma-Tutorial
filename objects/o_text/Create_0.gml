@@ -19,9 +19,6 @@ scribble_font_set_default("f_text");
 //Create a "typist" which holds typewriter state
 typist = scribble_typist();
 typist.in(1, 0);
-
-msg = "default text msg";
 background = 0;
 
-responses = ["Destroy", "Leave alone"];
 responseSelected = 0;

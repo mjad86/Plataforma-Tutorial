@@ -12,7 +12,17 @@ x2 = lerp(x2, x2Target, lerpProgress);
 textboxWidth = lerp(textboxWidth, x2Target - TILE_SIZE, lerpProgress);
 
 //cycle between responses
-responseSelected += (global.keyDown - global.keyUp);
+if(global.dialogueBuffer <= 0) && (responses[0] != -1) && (textProgress >= string_length(msg)){
+	if(global.keyDown) || (global.keyUp) {
+		//insert sfx here
+		global.dialogueBuffer = global.buffer;
+	}//end if
+	responseSelected += (global.keyDown - global.keyUp);	
+}//end if
+else {
+	global.dialogueBuffer = max(0, global.dialogueBuffer - 1);
+}//end else
+
 var _max = array_length(responses) - 1;
 var _min = 0;
 if(responseSelected > _max) {
@@ -25,6 +35,12 @@ if(responseSelected < _min) {
 if(global.keyRoll) {
 	var _msgLen = string_length(msg);
 	if(textProgress >= _msgLen) {
+		if(responses[0] != -1) {
+			with(originInstance) {
+				dialogue_responses(other.responseScript[other.responseSelected]);
+			}//end with
+		}//end if
+		
 		instance_destroy(); //destroy the textbox
 		if(instance_exists(o_text_queue)) {
 			with(o_text_queue) {

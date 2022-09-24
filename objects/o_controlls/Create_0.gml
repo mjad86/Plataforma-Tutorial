@@ -12,3 +12,5 @@ global.keyAttack = false;
 
 //buffer variables
 global.playerHasControl = true;
+global.buffer = 10;
+global.dialogueBuffer = 0;

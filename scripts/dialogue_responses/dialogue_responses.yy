@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "new_text_box",
+  "name": "dialogue_responses",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

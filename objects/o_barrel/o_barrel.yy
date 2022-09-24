@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "o_barrel",
   "spriteId": {
     "name": "s_barrel",
     "path": "sprites/s_barrel/s_barrel.yy",
@@ -27,13 +30,10 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"entityActivateScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"-1","resourceVersion":"1.0","name":"","resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"-1",},
   ],
   "parent": {
     "name": "Overworld",
     "path": "folders/Objects/Overworld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "o_barrel",
-  "resourceType": "GMObject",
 }
