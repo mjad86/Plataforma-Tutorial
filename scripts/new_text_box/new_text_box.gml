@@ -12,10 +12,10 @@ function new_text_box(){
 	else {
 		_obj = o_text;//if no text queued then we asign the regular o_text object
 	}//end else
-	
+
 	with(instance_create_layer(0, 0, "player", _obj)) {
 		msg = argument[0];
-
+		
 		if(instance_exists(other)) {
 			originInstance = other.id;
 		}//end if

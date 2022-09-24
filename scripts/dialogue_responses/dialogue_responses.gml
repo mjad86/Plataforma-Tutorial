@@ -7,13 +7,13 @@ function dialogue_responses(argument0){
 			
 		break;
 		case 1:
-			new_text_box("You tried to destroy the barrel, but nothing happened", 0);		
+			new_text_box("\nYou tried to destroy the barrel, but nothing happened", 0);		
 		break;
 		case 2:
 			new_text_box("Will you try again?", 0, ["3:Yes!", "0:No."])
 		break;
 		case 3:
-			new_text_box("You tried but nothing happened...", 0);
+			new_text_box("\nYou tried but nothing happened...", 0);
 		break;
 		default:
 		break;
